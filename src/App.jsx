@@ -37,7 +37,6 @@ function App() {
         onClickHandler={() => console.log("error click")}
       />
       
-    
     </div>
   )
 }
