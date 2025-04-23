@@ -1,0 +1,21 @@
+function getButtonStyleType(styleType) {
+    const primaryButtonStyling = "bg-blue-500 border-blue-700 hover:bg-blue-700 hover:border-blue-900";
+    const secondaryButtonStyling = "bg-gray-500 border-gray-700 hover:bg-gray-700 hover:border-gray-900";
+    const warningButtonStyling = "bg-yellow-500 border-yellow-700 hover:bg-yellow-700 hover:border-yellow-900";
+    const errorButtonStyling = "bg-red-500 border-red-700 hover:bg-red-700 hover:border-red-900";
+
+    if (styleType === "primary") {
+        return primaryButtonStyling;
+    } else if (styleType === "secondary") {
+        return secondaryButtonStyling;
+    } else if (styleType === "warning") {
+        return warningButtonStyling;
+    } else if (styleType === "error") {
+        return errorButtonStyling;
+    } else {
+        return primaryButtonStyling; // Default to primary if no valid styleType is provided
+    }
+}
+
+export default getButtonStyleType;
+// This function takes a styleType as an argument and returns the corresponding Tailwind CSS classes for the button styling.
