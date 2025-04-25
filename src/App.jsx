@@ -1,4 +1,6 @@
-import Button from "./components/Button/Button"
+//import Button from "./components/Button/Button"
+
+import TextInput from "./components/TextInput/TextInput";
 
 function App() {
   return (
@@ -6,36 +8,9 @@ function App() {
 
       <h1
         className="font-semibold text-3xl">
-        Hello, World!
+        Welcome to Hang Man!
       </h1>
-
-      <Button
-        text="Secondary" 
-        buttonType="submit" 
-        styleType="secondary" 
-        onClickHandler={() => console.log("secondary click")} 
-      />
-      
-      <Button 
-        text="Primary" 
-        buttonType="button" 
-        styleType="primary" 
-        onClickHandler={() => console.log("primary click")} 
-      />
-      
-      <Button 
-        text="Warning"
-        buttonType="button" 
-        styleType="warning" 
-        onClickHandler={() => console.log("warning click")}
-      />
-
-      <Button
-        text="Error"
-        buttonType="button" 
-        styleType="error" 
-        onClickHandler={() => console.log("error click")}
-      />
+      <TextInput label= {"Enter your words"}  value="" onChange={() => {}}/>
       
     </div>
   )
